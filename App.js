@@ -11,8 +11,6 @@ import {AddPosts} from './AddPosts';
 
 function App() {   
   const [getList, setList] = useState([]);
-  if(getList.length <1) {fetch('http://localhost:3001/getPosts').then(response => response.json()).then(response => setList(response))};
-//data TODO
   return (
     <div className="App">
       <header className="App-header">
